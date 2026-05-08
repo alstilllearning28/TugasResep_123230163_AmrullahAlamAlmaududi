@@ -79,7 +79,7 @@ class _HomePageState extends State<HomePage> {
           child: _isLoadingCategories
               ? const Center(
                   child: CircularProgressIndicator(
-                      color: Color(0xFF4E342E))) // Coklat Gelap
+                      color: Color(0xFF4E342E))) 
               : ListView.builder(
                   scrollDirection: Axis.horizontal,
                   padding:
@@ -98,7 +98,7 @@ class _HomePageState extends State<HomePage> {
                               horizontal: 16, vertical: 6),
                           decoration: BoxDecoration(
                             color: selected
-                                ? const Color(0xFF4E342E) // Coklat Gelap
+                                ? const Color(0xFF4E342E)
                                 : Colors.white,
                             borderRadius: BorderRadius.circular(20),
                             border: Border.all(
@@ -168,7 +168,7 @@ class _HomePageState extends State<HomePage> {
                             onPressed: _loadMeals,
                             style: ElevatedButton.styleFrom(
                               backgroundColor:
-                                  const Color(0xFF4E342E), // Coklat Gelap
+                                  const Color(0xFF4E342E), 
                             ),
                             child: const Text('Coba Lagi',
                                 style: TextStyle(color: Colors.white)),
@@ -256,7 +256,7 @@ class _MealCard extends StatelessWidget {
                     color: const Color(0xFFF5F5F5),
                     child: const Center(
                       child: CircularProgressIndicator(
-                        color: Color(0xFF4E342E), // Coklat Gelap
+                        color: Color(0xFF4E342E), 
                         strokeWidth: 2,
                       ),
                     ),
