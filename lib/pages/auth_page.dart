@@ -12,7 +12,6 @@ class AuthPage extends StatefulWidget {
 class _AuthPageState extends State<AuthPage> {
   final _authService = AuthService();
 
-  // Status untuk menentukan form mana yang ditampilkan
   bool _isLogin = true;
 
   // Login controllers
@@ -81,7 +80,7 @@ class _AuthPageState extends State<AuthPage> {
           backgroundColor: Colors.green,
         ),
       );
-      // Pindah ke tampilan login & bersihkan form
+      
       setState(() => _isLogin = true);
       _regUsernameCtrl.clear();
       _regPasswordCtrl.clear();
@@ -99,7 +98,7 @@ class _AuthPageState extends State<AuthPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFEFEBE9), // Latar bernuansa coklat terang
+      backgroundColor: const Color(0xFFEFEBE9), 
       body: SafeArea(
         child: Center(
           child: SingleChildScrollView(
@@ -108,10 +107,10 @@ class _AuthPageState extends State<AuthPage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                // Logo & judul
+                
                 ClipRRect(
                   borderRadius: BorderRadius.circular(
-                      12), // Opsional: untuk membuat sudut gambar sedikit membulat
+                      12),
                   child: Image.asset(
                     'assets/image_9547ac.jpg',
                     width: 80,
@@ -137,7 +136,7 @@ class _AuthPageState extends State<AuthPage> {
                 ),
                 const SizedBox(height: 32),
 
-                // Menampilkan form sesuai state (tanpa slider tab)
+              
                 AnimatedSwitcher(
                   duration: const Duration(milliseconds: 300),
                   child: _isLogin ? _buildLoginForm() : _buildRegisterForm(),
