@@ -64,7 +64,7 @@ class _MainPageState extends State<MainPage> {
             fontSize: 20,
           ),
         ),
-        backgroundColor: const Color(0xFF4E342E), // Coklat Gelap
+        backgroundColor: const Color(0xFF4E342E), 
         elevation: 0,
         actions: [
           IconButton(
@@ -81,7 +81,7 @@ class _MainPageState extends State<MainPage> {
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
         onTap: (index) => setState(() => _currentIndex = index),
-        selectedItemColor: const Color(0xFF4E342E), // Coklat Gelap
+        selectedItemColor: const Color(0xFF4E342E), 
         unselectedItemColor: const Color(0xFF999999),
         selectedLabelStyle: const TextStyle(fontWeight: FontWeight.w600),
         items: const [
